@@ -1,0 +1,94 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Coding‑Ninjas (Intro to Python)</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Glassmorphism custom utilities -->
+    <style>
+        @layer utilities {
+            .glass {
+                @apply bg-white/10 backdrop-blur-md rounded-xl border border-white/20;
+                box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-indigo-200 via-purple-200 to-pink-100 font-sans">
+
+    <!-- Header -->
+    <header class="py-6 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-800">Get in Touch</h1>
+        <p class="mt-2 text-lg text-gray-600">
+            Feel free to reach out for collaborations, queries or just to say hi!
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-4">
+        <section class="w-full max-w-lg glass p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Contact Information</h2>
+
+            <div class="space-y-4">
+                <!-- Email -->
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M16 12h2a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6a2 2 0 012-2h2m4-9l5 5m0 0L12 3m5 5H8"></path>
+                    </svg>
+                    <a href="mailto:chiragsinghal127@gmail.com"
+                       class="text-indigo-700 hover:underline font-medium">chiragsinghal127@gmail.com</a>
+                </div>
+
+                <!-- GitHub -->
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gray-800" fill="currentColor"
+                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.866-.014-1.7-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.907-.62.069-.607.069-.607 1.003.07 1.531 1.032 1.531 1.032.892 1.528 2.341 1.087 2.91.832.091-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.944 0-1.091.39-1.984 1.029-2.682-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.852.004 1.71.115 2.51.337 1.907-1.294 2.746-1.025 2.746-1.025.546 1.377.202 2.394.1 2.647.64.698 1.028 1.591 1.028 2.682 0 3.842-2.339 4.688-4.566 4.936.359.31.678.923.678 1.86 0 1.342-.012 2.424-.012 2.752 0 .268.18.58.688.482A10.005 10.005 0 0022 12c0-5.523-4.477-10-10-10z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <a href="https://github.com/chirag127"
+                       target="_blank"
+                       class="text-gray-800 hover:underline font-medium">github.com/chirag127</a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-blue-600" fill="currentColor"
+                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.291c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.291h-3v-4.5c0-1.079-.021-2.467-1.5-2.467-1.5 0-1.732 1.174-1.732 2.385v4.582h-3v-9h2.882v1.233h.041c.402-.762 1.384-1.564 2.849-1.564 3.047 0 3.609 2.006 3.609 4.617v5.714z"/>
+                    </svg>
+                    <a href="https://linkedin.com/in/chirag-singhal1"
+                       target="_blank"
+                       class="text-blue-600 hover:underline font-medium">linkedin.com/in/chirag-singhal1</a>
+                </div>
+
+                <!-- Buy Me A Coffee -->
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-amber-600" fill="currentColor"
+                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2c-2.761 0-5 2.239-5 5v2h-1c-2.21 0-4 1.79-4 4v7c0 2.21 1.79 4 4 4h14c2.21 0 4-1.79 4-4v-7c0-2.21-1.79-4-4-4h-1v-2c0-2.761-2.239-5-5-5zm-3 5c0-1.654 1.346-3 3-3s3 1.346 3 3v2h-6v-2z"/>
+                    </svg>
+                    <a href="https://buymeacoffee.com/WhyIsWhen"
+                       target="_blank"
+                       class="text-amber-600 hover:underline font-medium">Buy Me a Coffee</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-sm text-gray-600 bg-white/20 backdrop-blur-md">
+        © 2026 Chirag Singhal | Designed by Chirag Singhal
+    </footer>
+
+</body>
+</html>
+```
